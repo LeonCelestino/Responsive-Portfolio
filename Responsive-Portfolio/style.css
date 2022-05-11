@@ -10,7 +10,7 @@ body
     font-family: 'roboto', sans-serif;
 
 }
-
+/* The section style */
 .home
 {
     min-width: 682px;
@@ -29,7 +29,7 @@ body
 
     background: rgba(0,0,0, 0.6);
 }
-
+/* Line on top. It'll be animated later */
 .line
 {
     width: 50px;
@@ -41,10 +41,12 @@ body
 
     background-color: #fff;
 }
+/* Navbar, It'll appear later */
 header{
     display: none;
 }
 
+/* Home page content style */
 .box 
 {
     display: flex;
