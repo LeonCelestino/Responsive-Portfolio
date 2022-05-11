@@ -71,6 +71,17 @@ header{
     color: #fff;
 }
 
+
+.left h2.hello
+{
+    margin-bottom: 40px;
+
+    font-size: 48px;
+    color: #E8094C;
+    letter-spacing: 10px;
+    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
+}
+
 .left h2.iAm::after
 {
     display: block;
@@ -85,14 +96,6 @@ header{
     top: -15px;
 }
 
-.left h2.hello
-{
-    margin-bottom: 40px;
-
-    font-size: 48px;
-    color: #17eb50;
-    letter-spacing: 10px;
-}
 
 .left h2.like::after
 {
@@ -122,7 +125,8 @@ header{
     width: 310px;
     height: 5px;
 
-    background-color: #17eb50;
+    box-shadow: 0px 6px 9px 3px;
+    background-color: #E8094C;
 }
 
 .left a .fa-brands
@@ -130,7 +134,7 @@ header{
     font-size: 80px;
     color: white;
 
-    margin: 5px 15px 0;
+    margin: 5px 13px;
 }
 
 img
