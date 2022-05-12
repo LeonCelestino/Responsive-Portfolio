@@ -126,6 +126,10 @@ header{
     margin: 5px 13px;
 }
 
+.img {
+    transform: rotate(-10deg);
+}
+
 img
 {
     width: 355.35px;
@@ -136,6 +140,6 @@ img
     transform: translateY(10%);
 
     border-radius: 10%;
-    box-shadow: 50px 20px 50px 00px;
+    box-shadow: 50px 0px 70px 10px;
 }
 
