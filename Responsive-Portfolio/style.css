@@ -71,17 +71,6 @@ header{
     color: #fff;
 }
 
-
-.left h2.hello
-{
-    margin-bottom: 40px;
-
-    font-size: 48px;
-    color: #E8094C;
-    letter-spacing: 10px;
-    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
-}
-
 .left h2.iAm::after
 {
     display: block;
@@ -125,7 +114,7 @@ header{
     width: 310px;
     height: 5px;
 
-    box-shadow: 0px 6px 9px 3px;
+    box-shadow: 0px 6px 9px 0px;
     background-color: #E8094C;
 }
 
