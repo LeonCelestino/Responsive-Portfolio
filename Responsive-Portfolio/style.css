@@ -10,12 +10,71 @@ body
     font-family: 'roboto', sans-serif;
 
 }
-/* The section style */
-.home
+/* The sections style */
+section
 {
+    
     min-width: 682px;
     width: 100%;
     height: 100vh;
+}
+/* Line on top. It'll be animated later */
+
+.line
+{
+    width: 30px;
+    height: 3px;
+    
+    
+
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+    background-color: #fff;
+}
+
+.line::before
+{
+    content: '';
+
+    width: 20px;
+    height: 3px;
+
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #fff;
+}
+
+.line::after
+{
+    content: '';
+
+    width: 20px;
+    height: 3px;
+
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #fff;
+
+}
+/* Navbar, It'll appear later */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* Home section content style */
+.home
+{
 
     background: url(./images/background.jpeg) no-repeat;
     background-size: cover;
@@ -29,24 +88,7 @@ body
 
     background: rgba(0,0,0, 0.6);
 }
-/* Line on top. It'll be animated later */
-.line
-{
-    width: 50px;
-    height: 3px;
 
-    position: relative;
-    top: 15px;
-    left: 15px;
-
-    background-color: #fff;
-}
-/* Navbar, It'll appear later */
-header{
-    display: none;
-}
-
-/* Home page content style */
 .box 
 {
     display: flex;
@@ -111,7 +153,7 @@ header{
 
 .line-bottom
 {
-    width: 310px;
+    width: 100%;
     height: 5px;
 
     box-shadow: 0px 6px 9px 0px;
@@ -123,9 +165,8 @@ header{
     font-size: 80px;
     color: white;
 
-    margin: 5px 13px;
+    margin: 30px 20px;
 }
-
 .img {
     transform: rotate(-10deg);
 }
@@ -133,6 +174,7 @@ header{
 img
 {
     width: 355.35px;
+    width: max(100%);
     height: 477.37px;
 
     position: relative;
@@ -143,3 +185,23 @@ img
     box-shadow: 50px 0px 70px 10px;
 }
 
+/* About Me section style */
+
+.about
+{
+    background: #634646;
+}
+
+.square
+{
+    height: 348px;
+    width: 297px;
+    background-color: #C4C4C4;
+}
+
+.inner-square
+{
+    width: 412px;
+    height: 400px;
+    background-color: #000;
+}
