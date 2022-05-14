@@ -18,52 +18,7 @@ section
     width: 100%;
     height: 100vh;
 }
-/* Line on top. It'll be animated later */
 
-.line
-{
-    width: 30px;
-    height: 3px;
-    
-    
-
-    position: absolute;
-    top: 30px;
-    left: 50px;
-
-    background-color: #fff;
-}
-
-.line::before
-{
-    content: '';
-
-    width: 20px;
-    height: 3px;
-
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background-color: #fff;
-}
-
-.line::after
-{
-    content: '';
-
-    width: 20px;
-    height: 3px;
-
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background-color: #fff;
-
-}
 /* Navbar, It'll appear later */
 header{
     position: absolute;
@@ -78,6 +33,7 @@ header{
 
     background: url(./images/background.jpeg) no-repeat;
     background-size: cover;
+    min-height: 720px;
     opacity: 1;
 }
 
@@ -162,17 +118,15 @@ header{
     margin: 30px 20px;
 }
 .img {
+    width: 355.35px;
     transform: rotate(-10deg);
 }
 
 .img img
 {
     width: 355.35px;
-    width: max(100%);
-    height: 477.37px;
+    max-width: 100%;
 
-    position: relative;
-    top: 50%;
     transform: translateY(10%);
 
     border-radius: 10%;
@@ -185,7 +139,8 @@ header{
 {
     background: #634646;
     display: flex;
-    min-height: 660px;
+    min-height:720px;
+    min-width: 1200px;
     justify-content: space-around;
     align-items: center;
 }
@@ -310,3 +265,84 @@ header{
 
     position: absolute;
 }
+
+/* CONTACT ME SECTION */
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-height: 720px;
+}
+.contact h2
+{
+    display: block;
+
+
+    font-size: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
+    color: #F8573E;
+
+    user-select: none;
+}
+
+.contact-icons
+{
+    display: flex;
+}
+.contact .fa-solid, 
+.contact .fa-whatsapp
+{
+    display: block;
+    font-size: 10em;
+    margin: 50px 50px;
+}
+
+.contact .fa-solid
+{
+    color: blue;
+}
+
+.contact .fa-whatsapp
+{
+    color: #B2F73E;
+}
+
+.contact .fa-solid::after
+{
+    font-family: 'roboto';
+    font-weight: bold;
+    content: 'LeonCelestino@outlook.com';
+
+    display: block;
+
+    color: rgb(82, 33, 33);
+
+    position: relative;
+    left: -10%;
+    top: 10%;
+    font-size: 0.9rem;
+}
+
+.contact .fa-whatsapp::after
+{
+    font-family: 'roboto';
+    font-weight: bold;
+    content: '+55 (41) 9 9144-5186';
+
+    display: block;
+    
+    color: rgb(82, 33, 33);
+
+    position: relative;
+    left: -10%;
+    top: 10%;
+    font-size: 1rem;
+}
+/* FOOTER SECTION */
