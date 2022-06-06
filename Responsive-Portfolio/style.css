@@ -112,13 +112,6 @@ header{
     background-color: #E8094C;
 }
 
-.left a .fa-brands
-{
-    font-size: 80px;
-    color: white;
-
-    margin: 30px 20px;
-}
 .img {
     width: 355.35px;
     transform: rotate(-10deg);
@@ -258,6 +251,57 @@ header{
     position: absolute;
 }
 
+/* SKILLS SECTION */
+.skills
+{
+    background: #000;
+    width: 100%;
+    min-width: 1200px;
+    
+    padding: 3%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.knowledge, .know-more
+{
+    width: 50%;
+    padding: 2%;
+    border: 1px solid red;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.knowledge
+{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.know-more
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.knowledge h2, .know-more h2
+{
+    text-align: center;
+}
+.knowledge h2, .know-more h2, .skills .fab, .skills .fa-brands
+{
+    color: #fff;
+}
+
+
+.skills .fab, .skills .fa-brands
+{
+    display: inline-block;
+
+
+    text-align: center;
+    font-size: 5rem;
+}
 /* CONTACT ME SECTION */
 
 .contact
