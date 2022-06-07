@@ -29,36 +29,27 @@ header{
 .home
 {
 
-    background: url(./images/background.jpeg) no-repeat;
+    background: url(./images/background.jfif) no-repeat;
     background-size: cover;
     width: 100%;
     min-width: 1200px;
-    min-height: 720px;
-    height: 100vh;
-    opacity: 1;
-}
+    min-height: 100vh;
 
-.wrapper
-{
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0, 0.6);
-}
-
-.box 
-{
-    height: 100%;
-    width: 100%;
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+
+    padding: 5%;
 }
 
-.left h2
+.left
 {
-    font-size: 64px;
+    margin: 5%;
+    padding: 1%;
+
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -71,7 +62,7 @@ header{
     display: block;
     content: 'Leonardo';
 
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 5px;
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
     color: #F8573E;
@@ -86,7 +77,7 @@ header{
     display: block;
     content: 'coffe';
 
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 5px;
 
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
@@ -97,39 +88,27 @@ header{
 
 .left h2.joke
 {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 5px;
 
     position: relative;
     top: -20px;
 }
 
-.line-bottom
-{
-    width: 100%;
-    height: 5px;
 
-    box-shadow: 0px 6px 9px 0px;
-    background-color: #E8094C;
-}
+.coffee-img {
+    width: 25%;
+    height: 90%;
+    box-shadow: 50px 0px 70px 10px;
 
-.img {
-    width: 355.35px;
+    
     transform: rotate(-10deg);
-    position: relative;
-    top: -15%;
-}
-
-.img img
-{
-    width: 355.35px;
     max-width: 100%;
 
-    transform: translateY(10%);
 
     border-radius: 10%;
-    box-shadow: 50px 0px 70px 10px;
 }
+
 
 /* About Me section style */
 
@@ -377,3 +356,50 @@ header{
     font-size: 1rem;
 }
 /* FOOTER SECTION */
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 720px)
+{
+    .home, .about, .skills, .contact
+    {
+        min-width: 720px;
+    }
+    section
+    {
+        min-width: 720px;
+    }
+    .home
+    {
+        flex-direction: column-reverse;
+        
+        
+    }
+
+    .coffee-img
+    {
+        transform: none;
+    }
+
+    .line-bottom
+    {
+        display: none;
+    }
+
+    .left
+    {
+        font-size: 6rem;
+    }
+
+    .and
+    {
+        display: block;
+        font-size: 3rem;
+    }
+
+    .left h2.iAm::after, .left h2.like::after
+    {
+        font-size: 4rem;
+    }
+}
