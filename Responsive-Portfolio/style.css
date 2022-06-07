@@ -53,6 +53,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .left h2
@@ -138,21 +139,15 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    flex-wrap: wrap;
     width: 100%;
     min-width: 1200px;
     padding: 30px;
     
 }
 
-.square
-{
-    max-width: 800px;
-    width: 800px;
-}
 
-
-.square img
+.img-effect 
 {
     max-width: 100%;
     width: 800px;
@@ -171,7 +166,7 @@ header{
 .text h2
 {
     font-weight: bold;
-    font-size: 5em;
+    font-size: 4rem;
     letter-spacing: 4px;
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
     color: #F8573E;
@@ -183,7 +178,7 @@ header{
     margin: 0 10px 0 10px;
     padding: 5px;
 
-    font-size: 1.1em;
+    font-size: 1rem;
     text-align: left;
     color: white;
 }
