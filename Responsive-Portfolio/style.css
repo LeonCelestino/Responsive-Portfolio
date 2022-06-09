@@ -332,43 +332,38 @@ header{
 .contact .fa-solid
 {
     color: blue;
+    text-align: center;
 }
 
 .contact .fa-whatsapp
 {
     color: #B2F73E;
+    text-align: center;
+}
+.contact .fa-solid::after, .contact .fa-whatsapp::after
+{
+    display: block;
+    
+    color: rgb(82, 33, 33);
+    font-family: 'roboto';
+    font-weight: bold;
+
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: clamp(1.3rem, 1.012vw, 2rem);
 }
 
 .contact .fa-solid::after
 {
-    font-family: 'roboto';
-    font-weight: bold;
     content: 'LeonCelestino@outlook.com';
 
-    display: block;
-
-    color: rgb(82, 33, 33);
-
-    position: relative;
-    left: -10%;
-    top: 10%;
-    font-size: 0.9rem;
 }
 
 .contact .fa-whatsapp::after
 {
-    font-family: 'roboto';
-    font-weight: bold;
     content: '+55 (41) 9 9144-5186';
 
-    display: block;
-    
-    color: rgb(82, 33, 33);
-
-    position: relative;
-    left: -10%;
-    top: 10%;
-    font-size: 1rem;
 }
 /* FOOTER SECTION */
 
