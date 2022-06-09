@@ -29,7 +29,7 @@ header{
 .home
 {
 
-    background: url(./images/background.jfif) no-repeat;
+    background: url(../images/background.jfif) no-repeat;
     background-size: cover;
     width: 100%;
     min-width: 1200px;
@@ -300,7 +300,8 @@ header{
     align-items: center;
     flex-direction: column;
 
-    min-height: 720px;
+    min-height: 100vh;
+    height: 100vh;
 }
 .contact h2
 {
@@ -326,19 +327,18 @@ header{
 {
     display: block;
     font-size: 10em;
+    text-align: center;
     margin: 50px 50px;
 }
 
 .contact .fa-solid
 {
     color: blue;
-    text-align: center;
 }
 
 .contact .fa-whatsapp
 {
     color: #B2F73E;
-    text-align: center;
 }
 .contact .fa-solid::after, .contact .fa-whatsapp::after
 {
