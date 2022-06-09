@@ -49,7 +49,7 @@ header{
     margin: 5%;
     padding: 1%;
 
-    font-size: 4rem;
+    font-size: clamp(3rem, 4vw, 12rem);
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -62,7 +62,7 @@ header{
     display: block;
     content: 'Leonardo';
 
-    font-size: 3rem;
+    font-size: clamp(3rem, 4vw, 12rem);
     letter-spacing: 5px;
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
     color: #F8573E;
@@ -77,7 +77,7 @@ header{
     display: block;
     content: 'coffe';
 
-    font-size: 3rem;
+    font-size: clamp(3rem, 4vw, 12rem);
     letter-spacing: 5px;
 
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
@@ -88,7 +88,7 @@ header{
 
 .left h2.joke
 {
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.5vw + 1rem, 12rem);
     letter-spacing: 5px;
 
     position: relative;
@@ -121,7 +121,7 @@ header{
     flex-wrap: wrap;
     width: 100%;
     min-width: 1200px;
-    padding: 30px;
+    padding: 5%;
     
 }
 
@@ -129,23 +129,27 @@ header{
 .img-effect 
 {
     max-width: 100%;
-    width: 800px;
+    width: 50%;
+    min-width: 400px;
     object-fit: cover;
 }
 
 .text
 {
-    width: 500px;
+    width: 30%;
+    max-width: 1200px;
+    min-width: 500px;
     
-    text-align: center;
     letter-spacing: 2px;
     line-height: 1.4;
+
+    padding: 15px;
 }
 
 .text h2
 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: clamp(5rem, 3.8vw, 12rem);
     letter-spacing: 4px;
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
     color: #F8573E;
@@ -157,7 +161,7 @@ header{
     margin: 0 10px 0 10px;
     padding: 5px;
 
-    font-size: 1rem;
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
     text-align: left;
     color: white;
 }
@@ -169,7 +173,7 @@ header{
 
     letter-spacing: 0.2px;
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.2vw, 2rem);
     font-weight: bold;
     text-shadow: 8px 5px 5px rgb(0 0 0 / 75%);
 }
@@ -179,52 +183,63 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-
-.about-circle
+.about-curriculum a 
 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.about-circle
+{ 
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.about-circle:hover
+{
+    background-color: #ff2222;
+}
+.about-circle-right::after, .about-circle-left::after
+{
+    display: block;
+    position: relative;
+    top: 70%;
+    color: black;
+
+    
+    font-size: clamp(1.3rem, 1.012vw, 2rem);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
 
 }
 
 .about-circle-left::after
 {
-    content: 'english';
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    position: relative;
-    top: 70%;
-
+    content: 'en';
+    text-align: center;
 }
 
 .about-circle-right::after
 {
-    content: 'portuguese';
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    position: relative;
-    top: 70%;
-
+    content: 'pt-br';
+    text-align: center;
 }
 
-.about-circle a
+
+.fa-file-lines
 {
-    color: white;
-    font-size: 48px;
+    display: block;
+    font-size: 3rem;
 
-    position: absolute;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 /* SKILLS SECTION */
 .skills
 {
@@ -366,10 +381,6 @@ header{
     {
         min-width: 720px;
     }
-    section
-    {
-        min-width: 720px;
-    }
     .home
     {
         flex-direction: column-reverse;
@@ -380,26 +391,23 @@ header{
     .coffee-img
     {
         transform: none;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
-
+    .img-effect
+    {
+        width: 800px;
+    }
     .line-bottom
     {
         display: none;
     }
 
-    .left
-    {
-        font-size: 6rem;
-    }
-
     .and
     {
         display: block;
-        font-size: 3rem;
+        font-size: clamp(1rem, 1vw + 2rem, 12rem);
     }
 
-    .left h2.iAm::after, .left h2.like::after
-    {
-        font-size: 4rem;
-    }
 }
