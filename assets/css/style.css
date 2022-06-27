@@ -149,7 +149,7 @@ header{
 .text h2
 {
     font-weight: bold;
-    font-size: clamp(5rem, 3.8vw, 12rem);
+    font-size: clamp(2rem, 3vw, 12rem);
     letter-spacing: 4px;
     text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
     color: #F8573E;
@@ -158,10 +158,10 @@ header{
 
 .text p
 {
-    margin: 0 10px 0 10px;
+    margin: 0 10px 20px 0px;
     padding: 5px;
 
-    font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+    font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
     text-align: left;
     color: white;
 }
