@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*::after, *::before, * 
+{
+    
+    box-sizing: border-box;
+}
+*
+{
+    margin: 0;
+    background: 0;
+}
+
+body
+{
+    font-family: 'roboto', sans-serif;
+
+}
+/* The sections style */
+
+/* Navbar, It'll appear later */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* Home section content style */
+.home
+{
+
+    background: url(../images/background.jfif) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 5%;
+}
+
+.left
+{
+    margin: 5%;
+    padding: 1%;
+
+    font-size: clamp(3rem, 4vw, 12rem);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.left h2.iAm::after
+{
+    display: block;
+    content: 'Leonardo';
+
+    font-size: clamp(3rem, 4vw, 12rem);
+    letter-spacing: 5px;
+    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
+    color: #F8573E;
+
+    position: relative;
+    top: -15px;
+}
+
+
+.left h2.like::after
+{
+    display: block;
+    content: 'coffe';
+
+    font-size: clamp(3rem, 4vw, 12rem);
+    letter-spacing: 5px;
+
+    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
+    position: relative;
+    top: -15px;
+    color: #F8573E;
+}
+
+.left h2.joke
+{
+    font-size: clamp(1rem, 0.5vw + 1rem, 12rem);
+    letter-spacing: 5px;
+
+    position: relative;
+    top: -20px;
+}
+
+
+.coffee-img {
+    width: 25%;
+    height: 90%;
+    box-shadow: 50px 0px 70px 10px;
+
+    
+    transform: rotate(-10deg);
+    max-width: 100%;
+
+
+    border-radius: 10%;
+}
+
+
+/* About Me section style */
+
+.about
+{
+    background: #634646;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 1200px;
+    padding: 5%;
+    
+}
+
+
+.img-effect 
+{
+    max-width: 100%;
+    width: 50%;
+    min-width: 400px;
+    object-fit: cover;
+}
+
+.text
+{
+    width: 30%;
+    max-width: 1200px;
+    min-width: 500px;
+    
+    letter-spacing: 2px;
+    line-height: 1.4;
+
+    padding: 15px;
+}
+
+.text h2
+{
+    font-weight: bold;
+    font-size: clamp(5rem, 3.8vw, 12rem);
+    letter-spacing: 4px;
+    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
+    color: #F8573E;
+    padding: 15px;
+}
+
+.text p
+{
+    margin: 0 10px 0 10px;
+    padding: 5px;
+
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+    text-align: left;
+    color: white;
+}
+
+.text p span
+{
+    display: block;
+    margin-top: 10px;
+
+    letter-spacing: 0.2px;
+    text-align: center;
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    font-weight: bold;
+    text-shadow: 8px 5px 5px rgb(0 0 0 / 75%);
+}
+
+.about-curriculum
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-curriculum a 
+{
+
+    text-decoration: none;
+    color: white;
+    
+}
+.about-circle
+{ 
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.about-circle:hover
+{
+    background-color: #ff2222;
+}
+.about-circle-right::after, .about-circle-left::after
+{
+    display: block;
+    position: relative;
+    top: 70%;
+    color: black;
+
+    
+    font-size: clamp(1.3rem, 1.012vw, 2rem);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+
+}
+
+.about-circle-left::after
+{
+    content: 'en';
+    text-align: center;
+}
+
+.about-circle-right::after
+{
+    content: 'pt-br';
+    text-align: center;
+}
+
+
+.fa-file-lines
+{
+    display: block;
+    font-size: 3rem;
+
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* SKILLS SECTION */
+.skills
+{
+    background: #000;
+    width: 100%;
+    min-width: 1200px;
+    
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.knowledge, .know-more
+{
+    width: 50%;
+    padding: 2%;
+    border: 1px solid red;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.knowledge
+{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+.know-more
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.knowledge h2, .know-more h2
+{
+    text-align: center;
+}
+.knowledge h2, .know-more h2, .skills .fab, .skills .fa-brands
+{
+    color: #fff;
+}
+
+.skills .outside
+{
+    display: inline-block;
+    min-width: 50%;
+    max-width: 800px;
+    height: 8px;
+    border-radius: 10% / 10%;
+    background: white;
+}
+
+.skills .inside
+{
+    background: #ff2222;
+    display: block;
+    height: 100%;
+}
+
+.p-50
+{
+    width: 50%;
+    height: 100%;
+}
+.p-80
+{
+    width: 80%;
+}
+.skills .fab, .skills .fa-brands
+{
+    display: inline-block;
+
+
+    text-align: center;
+    font-size: 5rem;
+}
+/* CONTACT ME SECTION */
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    height: 100vh;
+}
+.contact h2
+{
+    display: block;
+
+
+    font-size: 8em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 7px 5px 8px rgba(0,0,0,0.75);
+    color: #F8573E;
+
+    user-select: none;
+}
+
+.contact-icons
+{
+    display: flex;
+}
+.contact .fa-solid, 
+.contact .fa-whatsapp
+{
+    display: block;
+    font-size: 10em;
+    text-align: center;
+    margin: 50px 50px;
+}
+
+.contact .fa-solid
+{
+    color: blue;
+}
+
+.contact .fa-whatsapp
+{
+    color: #B2F73E;
+}
+.contact .fa-solid::after, .contact .fa-whatsapp::after
+{
+    display: block;
+    
+    color: rgb(82, 33, 33);
+    font-family: 'roboto';
+    font-weight: bold;
+
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: clamp(1.3rem, 1.012vw, 2rem);
+}
+
+.contact .fa-solid::after
+{
+    content: 'LeonCelestino@outlook.com';
+
+}
+
+.contact .fa-whatsapp::after
+{
+    content: '+55 (41) 9 9144-5186';
+
+}
+/* FOOTER SECTION */
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 720px)
+{
+    .home, .about, .skills, .contact
+    {
+        min-width: 720px;
+    }
+    .home
+    {
+        flex-direction: column-reverse;
+        
+        
+    }
+
+    .coffee-img
+    {
+        transform: none;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .img-effect
+    {
+        width: 800px;
+    }
+    .line-bottom
+    {
+        display: none;
+    }
+
+    .and
+    {
+        display: block;
+        font-size: clamp(1rem, 1vw + 2rem, 12rem);
+    }
+
+}
